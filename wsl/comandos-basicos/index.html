@@ -243,9 +243,70 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Comandos Basicos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Comandos Basicos
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de Contenido">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de Contenido
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-la-ruta-y-ubicacion-actual" class="md-nav__link">
+    Mostrar la ruta y ubicacion actual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-archivos-de-la-carpeta-actual" class="md-nav__link">
+    Mostrar archivos de la carpeta actual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrar-a-una-carpeta" class="md-nav__link">
+    Entrar a una carpeta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-nueva-carpeta" class="md-nav__link">
+    Crear una nueva Carpeta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-una-carpeta" class="md-nav__link">
+    Eliminar una carpeta
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -271,12 +332,57 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de Contenido">
   
   
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de Contenido
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-la-ruta-y-ubicacion-actual" class="md-nav__link">
+    Mostrar la ruta y ubicacion actual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mostrar-archivos-de-la-carpeta-actual" class="md-nav__link">
+    Mostrar archivos de la carpeta actual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entrar-a-una-carpeta" class="md-nav__link">
+    Entrar a una carpeta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-una-nueva-carpeta" class="md-nav__link">
+    Crear una nueva Carpeta
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-una-carpeta" class="md-nav__link">
+    Eliminar una carpeta
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -290,7 +396,38 @@
                 
 
 
-<h1 id="comandos-basicos-linux-ubuntu-en-wsl">Comandos Basicos Linux - Ubuntu en WSL<a class="headerlink" href="#comandos-basicos-linux-ubuntu-en-wsl" title="Permanent link">&para;</a></h1>
+<h1 id="comandos-basicos-linux-ubuntu-en-wsl">Comandos Basicos Linux - Ubuntu en WSL</h1>
+<h2 id="mostrar-la-ruta-y-ubicacion-actual">Mostrar la ruta y ubicacion actual</h2>
+<pre><code>pwd
+</code></pre>
+<p>Usa el comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras. El comando devolverá una ruta absoluta (completa), que es básicamente una ruta de todos los directorios que comienzan con una barra diagonal (/) Un ejemplo de una ruta absoluta es /home/ubuntu ==&gt; Indicando que nos encontramos en la carpeta ubuntu y esta dentro de home</p>
+<h2 id="mostrar-archivos-de-la-carpeta-actual">Mostrar archivos de la carpeta actual</h2>
+<pre><code>ls
+</code></pre>
+<p>Hay variaciones que puedes usar con el comando ls:</p>
+<blockquote>
+<p>ls -R ==&gt; también listará todos los archivos en los subdirectorios <br>
+ls -a ==&gt; mostrará los archivos ocultos <br>
+ls -al ==&gt; listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.</p>
+</blockquote>
+<h2 id="entrar-a-una-carpeta">Entrar a una carpeta</h2>
+<pre><code>cd &lt;nombreCarpeta&gt;
+</code></pre>
+<p>Tenga en cuenta:</p>
+<blockquote>
+<p>cd .. (con dos puntos) para ir un directorio hacia arriba <br>
+cd para ir directamente a la carpeta de inicio <br>
+cd- (con un guión) para ir al directorio anterior</p>
+</blockquote>
+<h2 id="crear-una-nueva-carpeta">Crear una nueva Carpeta</h2>
+<pre><code>mkdir &lt;nombreCarpeta&gt;
+</code></pre>
+<p>Usa el comando mkdir para crear una nueva carpeta: si escribes mkdir backend, creará una carpeta llamado backend.
+si escribes mkdir backend/nodejs, creará una carpeta llamada nodejs dentro de la carpeta backend.</p>
+<h2 id="eliminar-una-carpeta">Eliminar una carpeta</h2>
+<pre><code>rm -r &lt;nombreCarpeta&gt;
+</code></pre>
+<p>Usa este comando para eliminar carpetas y los archivos que esta contiene: si escribes rm -r backend, elimina la carpeta llamado backend y sus respectivos arcivos y sub carpetas.</p>
 
               
             </article>
